@@ -42,4 +42,54 @@ VALUES (100, 'Jane Doe', 'jane.doe@example.com', 'Female', '2000-05-15', 'Comput
 
      admin query 
 INSERT INTO admin (admin_id, password) 
-VALUES (1000, 'password');
+VALUES (1, '1234');
+
+
+mysql> CREATE TABLE exam_questions (
+    ->     question_id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     exam_title VARCHAR(100) NOT NULL,
+    ->     created_by INT NOT NULL,
+    ->     question_type ENUM('mcq', 'descriptive') NOT NULL,
+    ->     question_text TEXT NOT NULL,
+    ->
+    ->     -- For MCQs
+    ->     option1 VARCHAR(255),
+    ->     option2 VARCHAR(255),
+    ->     option3 VARCHAR(255),
+    ->     option4 VARCHAR(255),
+    ->     correct_answer VARCHAR(255),
+    ->
+    ->     -- For Descriptive
+    ->     full_answer TEXT,
+    ->     partial_answer TEXT,
+    ->
+    ->     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ->     FOREIGN KEY (created_by) REFERENCES staff(staff_id)
+    -> );
+Query OK, 0 rows affected (0.06 sec)
+
+
+CREATE TABLE exam_schedule (
+    schedule_id INT AUTO_INCREMENT PRIMARY KEY,
+    exam_id INT NOT NULL,
+    staff_id INT NOT NULL,
+    exam_name VARCHAR(100) NOT NULL,
+    exam_date DATE NOT NULL,
+    exam_time TIME NOT NULL,
+    duration VARCHAR(20) NOT NULL,
+    total_marks INT NOT NULL,
+    department VARCHAR(50) NOT NULL,
+    UNIQUE (exam_id),
+    FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
+    FOREIGN KEY (exam_id) REFERENCES exam_questions(question_id)
+);
+
+CREATE TABLE results (
+    result_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT NOT NULL,
+    exam_title VARCHAR(50) NOT NULL,
+    exam_role ENUM('mcq', 'descriptive') NOT NULL,
+    score INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+);
