@@ -1,0 +1,146 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('examimg.jpg') no-repeat center center/cover;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+/* Header */
+header {
+    background: rgba(0, 98, 255, 0.9);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+main {
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    background: rgba(0, 51, 102, 0.85);  /* Deep blue instead of gray */
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 98, 255, 0.3); /* Softer blue shadow */
+}
+
+/* Section Text Styling */
+section h2 {
+    color: #ffcc00;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+section p, section ul {
+    color: white;
+    font-size: 18px;
+}
+
+/* Course List */
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #0073ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #0011ff;
+    transform: scale(1.05);
+}
+
+/* Register Button */
+.register-btn {
+    background: #ff5722;
+}
+
+.register-btn:hover {
+    background: #e64a19;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(0, 98, 255, 0.9);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section ul li {
+        width: 80%;
+    }
+}

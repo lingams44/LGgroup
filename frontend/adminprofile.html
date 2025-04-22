@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Control Panel</title>
+    <link rel="stylesheet" href="adminprofile.css">
+</head>
+<body>
+    <div class="admin-profile">
+        <header>
+            <h1>Admin Control Panel</h1>
+        </header>
+
+        <main>
+            <div class="control-panel">
+                <button id="manageStaffButton">Manage Staff</button>
+                <button id="manageStudentsButton">Manage Students</button>
+                <button id="viewExamsButton">View Exams</button>
+                <button id="viewResultsButton">View Results</button>
+                <button id="backButton">Back</button>
+
+                <table id="dataTable" style="display:none;">
+                    <thead id="tableHead"></thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="adminprofile.js"></script>
+</body>
+</html>

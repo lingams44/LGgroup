@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.question-area {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.options {
+    text-align: left;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background: #f4f4f4;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.options label:hover {
+    background: #ffcc80;
+    border-color: #ff9800;
+}
+
+input[type="radio"] {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.next-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.next-btn:hover {
+    background-color: #388e3c;
+}
+
+.bookmark-btn {
+    background-color: #ffeb3b;
+    color: black;
+}
+
+.bookmark-btn:hover {
+    background-color: #fbc02d;
+}
+
+.status {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

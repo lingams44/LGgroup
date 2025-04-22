@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1E90FF, #00BFFF);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Headings */
+h2 {
+    color: #0044cc;
+}
+
+/* Inputs & Select */
+select, input, button, textarea {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+select {
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+input, textarea {
+    background: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+    background: #fff;
+    border: 1px solid #0044cc;
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(45deg, #0044cc, #008CFF);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #003399, #0066CC);
+    transform: scale(1.05);
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Question List */
+#questionList {
+    margin-top: 20px;
+    text-align: left;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

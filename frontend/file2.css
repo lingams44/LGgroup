@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5a6b50;
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #cfd8c4;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px 40px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.publish-btn {
+    background-color: #b0bec5;
+}
+
+.clear-btn {
+    background-color: #ddd;
+}
+
+.back-btn {
+    background-color: #7ee37e;
+    font-weight: bold;
+}

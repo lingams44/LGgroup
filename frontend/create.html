@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Exam</title>
+    <link rel="stylesheet" href="create.css">
+    <script src="create.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Create New Exam</h2>
+        <form id="examForm">
+            <input type="text" id="examTitle" placeholder="Exam Title" required>
+
+            <!-- 🔧 Removed inline onchange handler -->
+            <select id="questionType">
+                <option value="mcq">MCQ</option>
+                <option value="descriptive">Descriptive</option>
+            </select>
+
+            <div id="mcqContainer">
+                <input type="text" id="mcqQuestion" placeholder="Enter MCQ Question">
+                <input type="text" id="option1" placeholder="Option 1">
+                <input type="text" id="option2" placeholder="Option 2">
+                <input type="text" id="option3" placeholder="Option 3">
+                <input type="text" id="option4" placeholder="Option 4">
+                <input type="text" id="correctAnswer" placeholder="Correct Answer">
+            </div>
+
+            <div id="descriptiveContainer" class="hidden">
+                <input type="text" id="descQuestion" placeholder="Enter Descriptive Question">
+                <textarea id="fullAnswer" placeholder="Full Answer"></textarea>
+                <textarea id="partialAnswer" placeholder="Partial Answer (optional)"></textarea>
+            </div>
+
+            <!-- ✅ Hidden staff ID -->
+            <input type="hidden" id="staffId">
+
+            <button type="submit">Submit Question</button>
+        </form>
+    </div>
+</body>
+</html>

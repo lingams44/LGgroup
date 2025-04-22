@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Profile</title>
+    <link rel="stylesheet" href="staffprof.css">
+</head>
+<body>
+    <div class="staff-profile">
+        <header>
+            <h1>Staff Profile</h1>
+        </header>
+
+        <main>
+            <div id="profileDetails" class="profile-details">
+                <div class="form-group">
+                    <label for="staff_id">Staff ID:</label>
+                    <input type="text" id="staff_id" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <input type="text" id="gender" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <input type="text" id="department" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" readonly />
+                </div>
+
+                <button id="createExamButton">Create Exam</button>
+                <button id="checkResultsButton">Check Results</button>
+                <button id="publishResultsButton">Publish Results</button>
+                <button id="uploadExamDetailsButton">Upload Exam Details</button>
+                <button id="backButton">Back</button>
+            </div>
+            <p id="loadingMessage">Loading profile...</p>
+        </main>
+    </div>
+    <script src="staffprof.js"></script>
+</body>
+</html>

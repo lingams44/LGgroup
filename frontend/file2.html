@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish Exam Schedule</title>
+    <link rel="stylesheet" href="file2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Publish Exam Schedule</h2>
+
+        <label for="examName">Exam Name:</label>
+        <input type="text" id="examName">
+
+        <label for="examDate">Exam Date (YYYY-MM-DD):</label>
+        <input type="date" id="examDate">
+
+        <label for="examTime">Exam Time (HH:MM):</label>
+        <input type="time" id="examTime">
+
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration">
+
+        <label for="totalMarks">Total Marks:</label>
+        <input type="number" id="totalMarks">
+
+        <label for="department">Department:</label>
+        <select id="department">
+            <option>Computer Science</option>
+            <option>Electronics</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
+            <option>Electrical</option>
+        </select>
+
+        <label for="examId">Exam ID:</label>
+        <input type="text" id="examId">
+
+        <div class="button-container">
+            <button class="publish-btn" id="publishBtn">Publish Schedule</button>
+            <button class="clear-btn" id="clearBtn">Clear</button>
+            <button class="back-btn" id="backBtn">BACK</button>
+        </div>
+    </div>
+
+    <script src="file2.js"></script>
+</body>
+</html>

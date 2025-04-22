@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Register</title>
+    <link rel="stylesheet" href="staffreg.css">
+</head>
+<body>
+    <div class="staff-register">
+        <header>
+            <h1>Staff Register</h1>
+        </header>
+
+        <main>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="staff_id">Staff ID:</label>
+                    <input type="text" id="staff_id" name="staff_id" required />
+                </div>
+                <div class="form-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" required />
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required />
+                </div>
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Mechanical">Mechanical</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+                <button type="button" id="backButton">Back</button>
+            </form>
+        </main>
+    </div>
+    <script src="staffreg.js"></script>
+</body>
+</html>

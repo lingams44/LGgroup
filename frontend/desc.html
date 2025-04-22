@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descriptive Exam</title>
+    <link rel="stylesheet" href="desc.css">
+</head>
+<body>
+    <div class="exam-container">
+        <div class="exam-header">
+            <h1>Descriptive Exam</h1>
+            <p id="timer">Time Left: <span id="time">30:00</span></p>
+        </div>
+
+        <div class="question-box">
+            <h2 id="question">Loading question...</h2>
+        </div>
+
+        <textarea id="answer" placeholder="Type your answer here..."></textarea>
+
+        <div class="controls">
+            <button class="next-btn">Next Question</button>
+            <button class="submit-btn" disabled>Submit Exam</button>
+            <button class="clear-btn">Clear Answer</button>
+        </div>
+
+        <div id="status-text" class="status-text">Status: Loading...</div>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="desc.js"></script>
+</body>
+</html>
