@@ -1,0 +1,45 @@
+CREATE DATABASE miniproject;
+
+USE miniproject;
+
+CREATE TABLE students (
+    student_id INT  PRIMARY KEY,
+    full_name VARCHAR(20) NOT NULL,
+    email VARCHAR(20) NOT NULL UNIQUE,
+    gender ENUM('Male', 'Female', 'Others') NOT NULL,
+    date_of_birth DATE NOT NULL,
+    department VARCHAR(20) NOT NULL,
+    std_year VARCHAR(10) NOT NULL,
+    institute_name VARCHAR(20) NOT NULL,
+    address TEXT NOT NULL,
+    password VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE staff (
+    staff_id INT  PRIMARY KEY,
+    full_name VARCHAR(20) NOT NULL,
+    email VARCHAR(20) NOT NULL UNIQUE,
+    gender ENUM('Male', 'Female', 'Others') NOT NULL,
+    age INT NOT NULL,
+    department VARCHAR(20) NOT NULL,
+    address TEXT NOT NULL,
+    password VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE admin (
+    admin_id INT PRIMARY KEY,
+    password VARCHAR(25) NOT NULL
+);
+
+
+
+      staff insert
+INSERT INTO staff (staff_id, full_name, email, gender, age, department, address, password) 
+VALUES (1, 'John Doe', 'john.doe@example.com', 'Male', 35, 'Computer Science', '123 Main St, Anytown, USA', 'password');
+      student insert
+INSERT INTO students (student_id, full_name, email, gender, date_of_birth, department, std_year, institute_name, address, password) 
+VALUES (100, 'Jane Doe', 'jane.doe@example.com', 'Female', '2000-05-15', 'Computer Science', '3rd Year', 'ABC University', '456 Elm St, Anytown, USA', 'password');
+
+     admin query 
+INSERT INTO admin (admin_id, password) 
+VALUES (1000, 'password');
